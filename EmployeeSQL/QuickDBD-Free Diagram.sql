@@ -108,7 +108,7 @@ SELECT "employees"."first_name", "employees"."last_name", "employees"."sex"
 FROM "employees"
 WHERE "first_name" = 'Hercules'
 AND "last_name"
-LIKE 'B%'
+LIKE 'B%';
 
 SELECT "departments"."dept_no", "departments"."dept_name", "employees"."emp_no", "employees"."last_name", "employees"."first_name"
 FROM "employees"
@@ -132,4 +132,6 @@ SELECT last_name,
 COUNT ("employees"."last_name")
 FROM "employees"
 GROUP BY "employees"."last_name"
-ORDER BY COUNT ("employees"."last_name") DESC
+ORDER BY COUNT ("employees"."last_name") DESC;
+
+
